@@ -1,0 +1,353 @@
+body {
+    background-color: #111111;
+    scroll-behavior: smooth;
+    
+}
+/* snowflakes start here */
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background-image: url('images/snowflake.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+/* snowflakes end here */
+.headerh1 {
+    display: flex;
+    text-align: center !important;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(50px); 
+    background: rgba(0, 0, 0, 0); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer; 
+    transition: opacity 1s ease; 
+}
+.overlay.hidden {
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.overlay .text {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer; 
+}
+
+
+
+.HeaderDiv {
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.WinterAvatar {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.BorderAvatar {
+    border: 2px solid #000000;
+    border-radius: 30px;
+    width: 200px;
+    background-color: #393939;
+    transition: 0.5s ease all;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.BorderBody {
+    margin-top: 90px !important;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    background-color: #000000;
+    width: 750px;
+    justify-content: left !important;
+    margin: 0 auto;
+    color: aliceblue;
+    display: flex;
+    animation: 1s ease-in-out 0s 1 slideInFromTop;
+}
+
+.BorderBody p {
+    margin-left: -80px;
+    margin-top: 35px;
+    font-size: 20px !important;
+    text-align: center;
+    width: 700px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.BorderAvatar:hover {
+    background-color: #1c1c1c;
+}
+
+.CareerInfo img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.Introduction {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-style: italic;
+    max-width: 800px;
+}
+
+.Introduction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    filter: blur(25px);
+    border-radius: 90px;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.BlurredShadow {
+    background-color: #000000;
+    border-radius: 50px;
+    filter: blur(20px);
+}
+
+.TitleText {
+    margin-top: 100px;
+    margin-bottom: -50px;
+    font-size: 35px;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    max-width: 800%;
+}
+
+@media (max-width: 768px) {
+    .BorderBody {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BorderBody p {
+        font-size: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .Introduction {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .WinterAvatar {
+        width: 150px;
+    }
+
+    .CareerInfo img {
+        width: 50px;
+    }
+
+    .TitleText {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 368px) {
+    .BorderBody {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BorderBody p {
+        font-size: 16px !important;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .Introduction {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .WinterAvatar {
+        width: 100px;
+    }
+
+    .CareerInfo img {
+        width: 40px;
+    }
+
+    .TitleText {
+        font-size: 25px;
+    }
+    .social-icons{
+        margin-right: 100px;
+        font-size:0.5rem;
+    }
+    .social-icons a {
+        width: 3rem !important;
+        height: 2rem !important;
+        font-size:0.5rem;
+        -webkit-user-drag: none;
+        user-select: none;
+    }
+
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.projects img {
+    width: 100%;
+    max-width: 50%;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    opacity: 1;
+    transform: translateX(-00%);
+    transition: opacity 5s ease,transform 1s ease-in-out;
+    animation: slideInFromLeft 5s ease-in-out;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.projects img.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    -webkit-user-drag: none;
+    user-select: none;
+    margin-left: 18%;
+}
+
+.social-icons a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    transition: 0.3s ease;
+    color: #b74b4b;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #b74b4b;
+    box-shadow: 0 0 25px #b74b4b;
+}
+#text-content-a{
+    text-decoration: none;
+    font-style: italic;
+    color:red;
+    animation: ColorSwitch 2s infinite;
+}
+
+@keyframes ColorSwitch {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: lime;
+    }
+}
