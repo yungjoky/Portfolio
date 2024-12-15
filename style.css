@@ -1,7 +1,9 @@
+*{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #111111;
-    scroll-behavior: smooth;
-    
 }
 /* snowflakes start here */
 #snow-container {
@@ -147,6 +149,7 @@ body {
     font-style: italic;
     max-width: 800px;
 }
+
 
 .Introduction::before {
     content: '';
@@ -350,4 +353,35 @@ body {
     100% {
         color: lime;
     }
+}
+.games{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-style: italic;
+    max-width: 800px;
+    
+}
+.games a{
+    color:white;
+    text-decoration: underline;
+    transition: color 0.5s ease;
+}
+.games a:hover{
+    color:red;
+}
+.divider p{
+text-align: center;
+ font-size: 120px;
+ color:white;   
+ margin-top: -70px;
+ margin-bottom: -60px;
+
 }
