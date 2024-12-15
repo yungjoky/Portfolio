@@ -1,0 +1,67 @@
+*{
+    scroll-behavior: smooth;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+body{
+    background-color: #21211F;
+    text-align: center;
+    color:white;
+}
+.rock,.paper,.scissors{
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    height: 10vh;
+    width: 10vh;
+}
+#rock,#paper,#scissors{
+    height: 11vh;
+    margin-left: -16px;
+}
+#paper{
+    margin-left: -10px;
+}
+.game-options button{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.game-computer{
+    border: 2px black solid;
+    width: 50vh;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-radius: 30px;
+ 
+}
+.game-result{
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
+.border-game{
+    background-color: black;
+    border-radius: 30px;
+}
+
+
+.Compliment img{
+    margin-top: -20px;
+    height: 20vh;
+    width: 25vh;
+    opacity: 0;
+    
+}
+.Compliment p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+hr{
+    border: 1px solid rgba(151, 214, 126, 0.836);
+    width: 50%;
+    margin-top: 20px;
+}
