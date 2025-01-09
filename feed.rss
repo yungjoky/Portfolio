@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>yungjoky.pages.dev</title>
+		<link><![CDATA[https://yungjoky.pages.dev]]></link>
+		<description>yungjoky.pages.dev</description>
+		<language>en</language>
+		<pubDate>Thu, 09 Jan 2025 16:13:33 +0000</pubDate>
+		<generator>MySitemapGenerator (www.mysitemapgenerator.com)</generator>
+
+		<item>
+			<guid isPermaLink="false">3688977364</guid>
+			<title>Welcome to Rock, Paper, Scissors!</title>
+			<link>https://yungjoky.pages.dev/games/rockpaperscissors</link>
+			<dc:creator>Administrator</dc:creator>
+			<category>Site News</category>
+			<pubDate>Thu, 09 Jan 2025 18:13:32 +0200</pubDate>
+			<enclosure url="https://yungjoky.pages.dev/games/images/rock.png" type="image/png" length="0" />
+		</item>
+	</channel>
+</rss>
