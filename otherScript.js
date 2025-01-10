@@ -1,28 +1,24 @@
 function openGithub() {
     window.open("https://github.com/yungjoky", "_blank");
 }
+
 document.addEventListener("DOMContentLoaded", function() {
     const fullTitle = "Welcome to my profile ";
     let currentTitle = "W";
-    let index = 0;
+    let index = 1; 
     let isDeleting = false;
 
     function typeTitle() {
         if (!isDeleting) {
-            currentTitle = fullTitle.substring(0, index + 1);
-            index++;
-            if (index === fullTitle.length) {
-                isDeleting = true;
-                setTimeout(typeTitle, 2000); 
+            // Keep it only as "W"
+            currentTitle = fullTitle.substring(0, 1); 
+            
+            if (index === 1) {
+                setTimeout(typeTitle, 300); 
                 return;
             }
-        } else {
-            currentTitle = fullTitle.substring(0, index - 1);
-            index--;
-            if (index === 0) {
-                isDeleting = false;
-            }
         }
+        
         document.title = currentTitle;
         setTimeout(typeTitle, 300);
     }
