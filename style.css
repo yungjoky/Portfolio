@@ -385,3 +385,21 @@ text-align: center;
  margin-bottom: -60px;
 
 }
+#navbar{
+    padding:15px;
+}
+.nav-link {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.5s ease all;
+}
+.nav-link:hover{
+    color: #b74b4b;
+}
+hr{
+   border: 1px solid #393939;
+}
