@@ -275,7 +275,7 @@ body {
     height: auto; 
     display: flex;
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(25%);
     transition: opacity 5s ease, transform 1s ease-in-out;
     animation: slideInFromLeft 5s ease-in-out forwards;
     user-select: none;
@@ -289,7 +289,7 @@ body {
 
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-60%);
+        transform: translateX(-0%);
         opacity: 0;
     }
     100% {
