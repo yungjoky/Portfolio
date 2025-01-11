@@ -289,14 +289,15 @@ body {
 
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-60%);
         opacity: 0;
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(40%);
         opacity: 1;
     }
 }
+
 
 .social-icons {
     display: flex;
