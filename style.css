@@ -289,7 +289,7 @@ body {
 
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-0%);
+        transform: translateX(-60%);
         opacity: 0;
     }
     100% {
