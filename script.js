@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const stopDragging = () => {
         isDragging = false;
         images.forEach(image => image.classList.remove('dragging'));
-    };
+    };  
 
     const drag = (e) => {
         if (!isDragging) return;
