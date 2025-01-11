@@ -103,7 +103,7 @@ body {
 }
 
 .BorderBody {
-    margin-top: 90px !important;
+    margin-top: 70px !important;
     border: 2px solid #000000;
     border-radius: 30px;
     background-color: #000000;
@@ -113,6 +113,7 @@ body {
     color: aliceblue;
     display: flex;
     animation: 1s ease-in-out 0s 1 slideInFromTop;
+    
 }
 
 .BorderBody p {
