@@ -272,11 +272,11 @@ body {
     width: 100%;
     max-width: 50%;
     padding: 10px;
-    height: auto;
+    height: auto; 
     display: flex;
     opacity: 1;
-    transform: translateX(-00%);
-    transition: opacity 5s ease,transform 1s ease-in-out;
+    transform: translateX(0%);
+    transition: opacity 5s ease, transform 1s ease-in-out;
     animation: slideInFromLeft 5s ease-in-out forwards;
     user-select: none;
     -webkit-user-drag: none;
