@@ -277,7 +277,7 @@ body {
     opacity: 1;
     transform: translateX(-00%);
     transition: opacity 5s ease,transform 1s ease-in-out;
-    animation: slideInFromLeft 5s ease-in-out;
+    animation: slideInFromLeft 5s ease-in-out forwards;
     user-select: none;
     -webkit-user-drag: none;
 }
