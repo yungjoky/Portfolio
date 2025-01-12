@@ -49,4 +49,4 @@ document.addEventListener("DOMContentLoaded", function() {
  //   setInterval(createSnowflake, 20);
 
     //snowflakes end here
-//});
+});
