@@ -31,22 +31,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typeTitle();
     //snowflakes start here
-     const snowContainer = document.getElementById('snow-container');
-    const createSnowflake = () => {
-        const snowflake = document.createElement('div');
-        snowflake.classList.add('snowflake');
-        snowflake.style.left = `${Math.random() * 100}vw`;
-        snowflake.style.width = `${Math.random() * 10 + 5}px`;
-        snowflake.style.height = snowflake.style.width;
-        snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
-        snowContainer.appendChild(snowflake);
+   //  const snowContainer = document.getElementById('snow-container');
+  //  const createSnowflake = () => {
+      //  const snowflake = document.createElement('div');
+      //  snowflake.classList.add('snowflake');
+      //  snowflake.style.left = `${Math.random() * 100}vw`;
+      //  snowflake.style.width = `${Math.random() * 10 + 5}px`;
+       // snowflake.style.height = snowflake.style.width;
+      //  snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+      //  snowContainer.appendChild(snowflake);
 
-        setTimeout(() => {
-            snowflake.remove();
-        }, parseFloat(snowflake.style.animationDuration) * 1000);
-    };
+     //   setTimeout(() => {
+      //      snowflake.remove();
+     //   }, parseFloat(snowflake.style.animationDuration) * 1000);
+  //  };
 
-    setInterval(createSnowflake, 20);
+ //   setInterval(createSnowflake, 20);
 
     //snowflakes end here
-});
+//});
