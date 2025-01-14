@@ -1,0 +1,292 @@
+#wrapper {
+    display: block;
+    width: calc(129px * 5);
+    margin: 20px auto 0;
+}
+#roulette {
+    border: 3px solid #000;
+    border-radius:10px;
+    overflow: hidden;
+    height: 128px;
+    white-space: nowrap;
+    position: relative;
+    background-color: rgb(36, 36, 36);
+    margin-bottom:5vh;
+}
+#roulette::after {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0px;
+	height: 128px;
+	border: 3px solid #9c9c9c;
+	content: ' ';
+	top: -3px;
+}
+#roulette .roulette-item {
+    width: 128px;
+    height: 128px;
+    display: inline-block;
+    border:0.5px solid rgba(0, 0, 0, 0.212);
+
+}
+#roulette .roulette-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+}
+#roulette-buttons {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+body{
+    background-color: #1d1d1d;
+    color:white;
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, #ebb400a4, #ffee00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: colorGradeitnFade 2s ease infinite;
+    background-size: 200% auto;
+}
+h4{
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5vh;
+}
+@keyframes colorGradeitnFade {
+    0% { background-position: 0% center; }
+    50% { background-position: 100% center; }
+    100% { background-position: 0% center; }
+    
+}
+.legendary-win {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.9);
+    border: 4px solid #d1ac08;
+    box-shadow: 0 0 20px #d1ac08;
+    padding: 30px;
+    border-radius: 15px;
+    z-index: 1000;
+}
+
+.legendary-text {
+    color: #d1ac08;
+    font-size: 2em;
+    text-shadow: 0 0 10px #d1ac08;
+    margin-bottom: 20px;
+}
+
+.legendary-item {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+    animation: float 3s ease-in-out infinite;
+}
+
+.legendary-button {
+    background: linear-gradient(45deg, #c7a50f, rgb(173, 142, 0));
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.legendary-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffd107;
+}
+
+.confetti {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: confetti-fall 3s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes confetti-fall {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 600px; }
+}
+.result {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.blue-win {
+    border: 4px solid #4b69ff;
+    box-shadow: 0 0 20px #4b69ff;
+}
+
+.purple-win {
+    border: 4px solid #8847ff;
+    box-shadow: 0 0 20px #8847ff;
+}
+
+.pink-win {
+    border: 4px solid #d32ce6;
+    box-shadow: 0 0 20px #d32ce6;
+}
+
+.red-win {
+    border: 4px solid #eb4b4b;
+    box-shadow: 0 0 20px #eb4b4b;
+}
+
+.legendary-win {
+    border: 4px solid #d1ac08;
+    box-shadow: 0 0 20px #d1ac08;
+}
+
+.won-item {
+    width: 200px;
+    height: auto;
+    margin: 50px;
+    animation: float 3s ease-in-out infinite;
+}
+#congratulations img{
+    height: 200px;
+    width: 228px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confetti {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: confetti-fall 3s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes confetti-fall {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 600px; }
+}
+
+
+#continuePlaying {
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#continuePlaying:hover {
+    transform: scale(1.05);
+}
+
+/* Rarity-specific button styles */
+.blue-win #continuePlaying {
+    background: linear-gradient(45deg, #4b69ff, #6983ff);
+    box-shadow: 0 0 15px #4b69ff;
+}
+
+.purple-win #continuePlaying {
+    background: linear-gradient(45deg, #8847ff, #a265ff);
+    box-shadow: 0 0 15px #8847ff;
+}
+
+.pink-win #continuePlaying {
+    background: linear-gradient(45deg, #d32ce6, #eb4dff);
+    box-shadow: 0 0 15px #d32ce6;
+}
+
+.red-win #continuePlaying {
+    background: linear-gradient(45deg, #eb4b4b, #ff6b6b);
+    box-shadow: 0 0 15px #eb4b4b;
+}
+
+.legendary-win #continuePlaying {
+    background: linear-gradient(45deg, #800080, #ff00ff);
+    box-shadow: 0 0 15px #800080;
+}
+#continuePlaying:hover {
+    transform: scale(1.05);
+}
+
+/* Rarity-specific button hover styles */
+.blue-win #continuePlaying:hover {
+    background: linear-gradient(45deg, #6983ff, #87a1ff);
+    box-shadow: 0 0 25px #4b69ff;
+}
+
+.purple-win #continuePlaying:hover {
+    background: linear-gradient(45deg, #a265ff, #bc83ff);
+    box-shadow: 0 0 25px #8847ff;
+}
+
+.pink-win #continuePlaying:hover {
+    background: linear-gradient(45deg, #eb4dff, #ff6bff);
+    box-shadow: 0 0 25px #d32ce6;
+}
+
+.red-win #continuePlaying:hover {
+    background: linear-gradient(45deg, #ff6b6b, #ff8989);
+    box-shadow: 0 0 25px #eb4b4b;
+}
+
+.legendary-win #continuePlaying:hover {
+    background: linear-gradient(45deg, #ff00ff, #ff66ff);
+    box-shadow: 0 0 25px #800080;
+}
+
+#roulette-start {
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 1s ease;
+    width: 20vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, #a35252, #334081);
+    background-size: 150% 150%;
+    background-position: left bottom; 
+    
+}
+
+#roulette-start:hover {
+    background-position: right top; /* End position */
+    transform: scale(1.05);
+}
