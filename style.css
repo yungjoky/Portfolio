@@ -385,12 +385,13 @@ body {
     padding: 20px;
     font-style: italic;
     max-width: 800px;
-    
+    flex-direction: column !important; 
 }
 .games a{
     color:white;
     text-decoration: underline;
     transition: color 0.5s ease;
+    margin-bottom: -25px;
 }
 .games a:hover{
     color:red;
