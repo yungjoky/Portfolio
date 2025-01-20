@@ -8,13 +8,18 @@
 
 
 <url>
-  <loc>https://yungjoky.pages.dev/</loc>
-  <lastmod>2025-01-09T16:11:10+00:00</lastmod>
+  <loc>https://yungjoky.tech/</loc>
+  <lastmod>2025-01-20T12:06:23+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://yungjoky.pages.dev/games/rockpaperscissors</loc>
-  <lastmod>2025-01-09T16:11:10+00:00</lastmod>
+  <loc>https://yungjoky.tech/games/rockpaperscissors</loc>
+  <lastmod>2025-01-20T12:06:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yungjoky.tech/games/CS%20Case%20Opener/</loc>
+  <lastmod>2025-01-20T12:06:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
